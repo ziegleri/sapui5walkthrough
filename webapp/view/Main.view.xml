@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.ui5.walkthrough.sapui5walkthrough.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+    </Page>
+</mvc:View>
