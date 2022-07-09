@@ -1,7 +1,8 @@
 <mvc:View
     controllerName="mysap.ui5.walkthrough.controller.App"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
     <App >
         <pages>
             <Page title="{i18n>homePageTitle}">
