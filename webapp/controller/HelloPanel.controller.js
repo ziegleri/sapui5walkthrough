@@ -1,10 +1,10 @@
 sap.ui.define([
-    'sap/ui/core/mvc/Controller',
+    'mysap/ui5/walkthrough/controller/BaseController.controller',
     'sap/m/MessageToast',
     'sap/ui/core/Fragment'
-], function(Controller, MessageToast, Fragment) {
+], function(BaseController, MessageToast, Fragment) {
     'use strict';
-        return Controller.extend("mysap.ui5.walkthrough.controller.HelloPanel", {
+        return BaseController.extend("mysap.ui5.walkthrough.controller.HelloPanel", {
             onShowHello: function(){
             // read msg from i18n model
             var oBundle = this.getView().getModel("i18n").getResourceBundle();
@@ -13,17 +13,6 @@ sap.ui.define([
             // show message
             MessageToast.show(sMsg);
             },
-            onOpenDialog : function () {
 
-                // create dialog lazily
-                if (!this.pDialog) {
-                    this.pDialog = this.loadFragment({
-                        name: "mysap.ui5.walkthrough.view.HelloDialog"
-                    });
-                } 
-                this.pDialog.then(function(oDialog) {
-                    oDialog.open();
-                });
-            }
         });
     });
