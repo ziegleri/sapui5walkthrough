@@ -9,5 +9,11 @@
             text="{i18n>dialogCloseButtonText}"
             press=".onCloseDialog"/>
         </beginButton>
+        <content>
+            <core:Icon 
+            src="sap-icon://world"
+            size="8rem"
+            class="sapUiMediumMargin" />
+        </content>
    </Dialog>
 </core:FragmentDefinition>
